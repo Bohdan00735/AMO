@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name" translatable="false">AMO</string>
+    <string name="my_name">Melniichuk Bohdan; \n
+        Group IO-81; \n
+        Variant: 17</string>
+    <string name="firstLab">Lab №1</string>
+    <string name="secondLab">Lab №2</string>
+    <string name="thirdLab">Lab №3</string>
+    <string name="forthLab">Lab №4</string>
+    <string name="fifthLab">Lab №5</string>
+    <string name="linear">Linear</string>
+    <string name="with_branching">With branching</string>
+    <string name="cyclic">Cyclic</string>
+    <string name="input_num_a">Input Value A</string>
+    <string name="input_num_b">Input Value B</string>
+    <string name="calculate_all">Calculate all</string>
+    <string name="calculate">Calculate</string>
+    <string name="random">Generate Random</string>
+    <string name="result">Result</string>
+    <string name="autoFill">AutoFill</string>
+    <string name="loadFromFile">Load data from file</string>
+    <string name="taskThirdLab"> Aitken\'s scheme
+        \n f(x) = cos^2(x)
+        \n interval [0;1] </string>
+    <string name="the_number_of_unknowns">Num of x</string>
+    <string name="first_test">1</string>
+
+    <string-array name="spinnerValues">
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+</resources>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/inputI"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:textColorHint="@color/mainTextColor"
+        android:hint="Input i"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputD" />
+
+    <EditText
+        android:id="@+id/inputH"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="Input h"
+        android:textColorHint="@color/mainTextColor"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toEndOf="@+id/inputV"
+        app:layout_constraintTop_toBottomOf="@+id/inputC" />
+
+    <EditText
+        android:id="@+id/inputC"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:ems="10"
+        android:hint="Input c"
+        android:inputType="numberDecimal"
+        android:textColorHint="@color/mainTextColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/inputP"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/inputV"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="Input v"
+        android:textColorHint="@color/mainTextColor"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toEndOf="@+id/inputD"
+        app:layout_constraintTop_toBottomOf="@+id/inputP" />
+
+    <EditText
+        android:id="@+id/inputX"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="Input x"
+        android:textColorHint="@color/mainTextColor"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toEndOf="@+id/inputI"
+        app:layout_constraintTop_toBottomOf="@+id/inputV" />
+
+    <EditText
+        android:id="@+id/inputP"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:ems="10"
+        android:hint="Input p"
+        android:inputType="numberDecimal"
+        android:textColorHint="@color/mainTextColor"
+        app:layout_constraintStart_toEndOf="@+id/inputQ"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/inputD"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="Input d"
+        android:textColorHint="@color/mainTextColor"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputQ" />
+
+    <EditText
+        android:id="@+id/inputQ"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:ems="10"
+        android:hint="Input q"
+        android:inputType="numberDecimal"
+        android:textColorHint="@color/mainTextColor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/CalculateAlgWithBranching"
+        style="@style/MyButtonTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/calculate"
+        android:onClick="calculateBranchles"
+        app:layout_constraintStart_toEndOf="@+id/inputX"
+        app:layout_constraintTop_toBottomOf="@+id/inputH" />
+
+    <Button
+        android:id="@+id/LoadFromBrunchlesFromFile"
+        style="@style/MyButtonTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:text="@string/loadFromFile"
+        android:onClick="getForBruncles"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputX" />
+
+    <TextView
+        android:id="@+id/ResultBrunchles"
+        style="@style/MyTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:text="Result"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LoadFromBrunchlesFromFile" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ResultBrunchles"
+        app:srcCompat="@drawable/with" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

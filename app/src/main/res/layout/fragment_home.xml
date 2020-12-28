@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="409dp"
+        android:layout_height="715dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/enterValueA"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:autofillHints="0"
+                android:ems="10"
+                android:hint="@string/input_num_a"
+                android:inputType="numberDecimal"
+                android:singleLine="false"
+                android:textColorHint="@color/mainTextColor" />
+
+            <EditText
+                android:id="@+id/enterValueB"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:autofillHints="0"
+                android:ems="10"
+                android:hint="@string/input_num_b"
+                android:inputType="numberDecimal"
+                android:textColorHint="@color/mainTextColor"
+
+                />
+
+            <Button
+                android:id="@+id/calculateLinear"
+                style="@style/MyButtonTextStyle"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:onClick="makeCalculationLinear"
+                android:text="@string/calculate_all" />
+
+            <Button
+                android:id="@+id/LoadFromFile1"
+                style="@style/MyButtonTextStyle"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:text="@string/loadFromFile"
+                android:onClick="getForLinear"/>
+
+            <TextView
+                android:id="@+id/LinearResult"
+                style="@style/MyTextStyle"
+                android:layout_width="282dp"
+                android:layout_height="95dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:text="Result" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/linear" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
